@@ -95,7 +95,7 @@ public class Main {
         //-------------------------------------------------------------------------
 
         // set the number of spins
-        Long numberOfGames = 100000L;
+        Long numberOfGames = 10_000_000L;
         System.out.println("Initial (payed) spins " + numberOfGames);
 
         // if you want to print the table and some other info to test if is working
@@ -151,16 +151,16 @@ public class Main {
         System.out.println("=======================================\n");
         System.out.println("Prizes frequency: ");
 
-        System.out.format("prize 5 -> %d  -> %4.4f \n", rtp.get(PRIZE_5), (double) 5 * rtp.get(PRIZE_5) / totalBets);
-        System.out.format("prize 10 -> %d  -> %4.4f \n", rtp.get(PRIZE_10), (double) 10 * rtp.get(PRIZE_10) / totalBets);
-        System.out.format("prize 15 -> %d  -> %4.4f \n", rtp.get(PRIZE_15), (double) 15 * rtp.get(PRIZE_15) / totalBets);
-        System.out.format("prize 20 -> %d  -> %4.4f \n", rtp.get(PRIZE_20), (double) 20 * rtp.get(PRIZE_20) / totalBets);
-        System.out.format("prize 25 -> %d  -> %4.4f \n", rtp.get(PRIZE_25), (double) 25 * rtp.get(PRIZE_25) / totalBets);
-        System.out.format("prize 50 -> %d  -> %4.4f \n", rtp.get(PRIZE_50), (double) 50 * rtp.get(PRIZE_50) / totalBets);
-        System.out.format("prize 75 -> %d  -> %4.4f \n", rtp.get(PRIZE_75), (double) 75 * rtp.get(PRIZE_75) / totalBets);
-        System.out.format("prize 100 -> %d  -> %4.4f \n", rtp.get(PRIZE_100), (double) 100 * rtp.get(PRIZE_100) / totalBets);
-        System.out.format("prize 150 -> %d  -> %4.4f \n", rtp.get(PRIZE_150), (double) 150 * rtp.get(PRIZE_150) / totalBets);
-        System.out.format("prize 400 -> %d  -> %4.4f \n", rtp.get(PRIZE_400), (double) 400 * rtp.get(PRIZE_400) / totalBets);
+        System.out.format("prize 5 -> %d  -> %4.6f \n", rtp.get(PRIZE_5), (double) 5 * rtp.get(PRIZE_5) / totalBets);
+        System.out.format("prize 10 -> %d  -> %4.6f \n", rtp.get(PRIZE_10), (double) 10 * rtp.get(PRIZE_10) / totalBets);
+        System.out.format("prize 15 -> %d  -> %4.6f \n", rtp.get(PRIZE_15), (double) 15 * rtp.get(PRIZE_15) / totalBets);
+        System.out.format("prize 20 -> %d  -> %4.6f \n", rtp.get(PRIZE_20), (double) 20 * rtp.get(PRIZE_20) / totalBets);
+        System.out.format("prize 25 -> %d  -> %4.6f \n", rtp.get(PRIZE_25), (double) 25 * rtp.get(PRIZE_25) / totalBets);
+        System.out.format("prize 50 -> %d  -> %4.6f \n", rtp.get(PRIZE_50), (double) 50 * rtp.get(PRIZE_50) / totalBets);
+        System.out.format("prize 75 -> %d  -> %4.6f \n", rtp.get(PRIZE_75), (double) 75 * rtp.get(PRIZE_75) / totalBets);
+        System.out.format("prize 100 -> %d  -> %4.6f \n", rtp.get(PRIZE_100), (double) 100 * rtp.get(PRIZE_100) / totalBets);
+        System.out.format("prize 150 -> %d  -> %4.6f \n", rtp.get(PRIZE_150), (double) 150 * rtp.get(PRIZE_150) / totalBets);
+        System.out.format("prize 400 -> %d  -> %4.6f \n", rtp.get(PRIZE_400), (double) 400 * rtp.get(PRIZE_400) / totalBets);
 
         System.out.format("total win = %d \n", totalWin);
         System.out.format("total bets = %d \n", totalBets);
